@@ -1,2 +1,0 @@
-num = input('Input a Number: ')
-print(type(num))
