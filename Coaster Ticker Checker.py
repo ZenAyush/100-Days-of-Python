@@ -5,25 +5,29 @@ print("Welcome to the rollercoaster!")
 
 # Prompt the user to enter their height in centimeters and store the value as an integer in the variable 'height'
 height = int(input("What is your height in cm? "))
-
-# Check if the height is greater than 120 cm using an if statement
-# Prompt the user to enter their height in centimeters
-height =(input("What is your height in centimeters? "))
+bill = 0
 
 # Check if the user's height is greater than or equal to 120 cm
 if height >= 120:
-    # If the height is greater than or equal to 120 cm, print a message saying the user can ride the rollercoaster
-    print("You can ride the rollercoaster!")
 
     # Prompt the user to enter their age
     age = int(input("What is your age? "))
     # Calculate the appropriate fee based on the user's age
     if age < 12:
-        print("Please Pay 5$ Sir.")
+        bill = 5
+        print("Child ticktes are 5$ Sir.")
     elif age > 18:
-        print("Please Pay 12$ Sir.")
+        bill = 12
+        print("Youth tickets are 12$ Sir.")
     else:
-        print("Please Pay 7$ Sir.")
+        bill = 7
+        print("Adult tickets are 7$ Sir.")
+
+    wants_photo = input("Do you want a photo taken? Y or N. ")
+    if wants_photo == "Y":
+        bill += 3
+    
+    print(f"Your final bill ${bill}.")
 
 else:
     # If the height is less than 120 cm, print a message saying the user cannot ride the rollercoaster
