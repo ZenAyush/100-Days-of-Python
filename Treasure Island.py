@@ -5,17 +5,17 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
 # This line prompts the user to make a choice between going left or right.
-chuj = input("You're at a crossroad. Where do you want to go? Type 'left' or 'right'\n")
+chuj = input("You're at a crossroad. Where do you want to go? Type 'left' or 'right'\n").lower()
 
 # This block of code executes if the user chooses to go left.
 if chuj == "left":
     # This line prompts the user to choose between waiting for a boat or swimming across a lake.
-    chuj = input("You come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n")
+    chuj = input("You come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n").lower()
     
     # This block of code executes if the user chooses to wait for a boat.
     if chuj == "wait":
         # This line prompts the user to choose between three doors of different colors.
-        chuj = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which color do you choose?\n")
+        chuj = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which color do you choose?\n").lower()
 
         # This block of code executes if the user chooses the yellow door.
         if chuj == "yellow":
