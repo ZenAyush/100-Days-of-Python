@@ -14,4 +14,4 @@ lent = len(names)
 num = random.randint(0, lent-1)
 
 # Printing the name at the index of the randomly generated number
-print(names[num])
+print(names[num]+" is going to buy the meal today!")
