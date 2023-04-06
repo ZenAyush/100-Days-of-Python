@@ -14,7 +14,7 @@ list_len = 0  # initialize the length of the list to zero
 
 # Iterate over the list of heights and add them up
 for height in student_heights:
-    sum = height + sum
+    sum += height
     list_len =+ 1
 
 # Calculate the average height
